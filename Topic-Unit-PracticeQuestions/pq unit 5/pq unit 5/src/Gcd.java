@@ -15,9 +15,9 @@ public class Gcd {
     public static int gcd(int first, int second) {
         int gcd = 1;
         int i = 2;
-        int least = least( num1 , num2);
+        int least = least( first , second);
         while (i <= least) {
-            if (num1 % i == 0 && num2 % i ==0){
+            if (first % i == 0 && second % i ==0){
 
             }
         }
@@ -25,11 +25,11 @@ public class Gcd {
         return gcd;
     }
 
-    public static int least(int num1, int num2) {
-        if (num1 < num2) {
-            return num1;
+    public static int least(int first, int second) {
+        if (first < second) {
+            return first;
         } else {
-            return num2;
+            return second;
         }
     }
 }
