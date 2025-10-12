@@ -25,11 +25,11 @@ public class Gcd {
         return gcd;
     }
 
-    public static int least(int num1, int num2) {
-        if (num1 < num2) {
-            return num1;
+    public static int least(int first, int second) {
+        if (first < second) {
+            return first;
         } else {
-            return num2;
+            return second;
         }
     }
 }
