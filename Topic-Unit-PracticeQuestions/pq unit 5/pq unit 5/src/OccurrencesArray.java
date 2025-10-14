@@ -7,11 +7,20 @@ public class OccurrencesArray {
         System.out.println("enter number you want to find: ");
         int num = input.nextInt();
         int occurrences = noOfOccurrences(numArr , num);
-        System.out.println("");
+        System.out.println("your element was found " + occurrences + " times in the array");
 
     }
     public static int noOfOccurrences(int[] numArr , int num){
-        return 0;
+        int occ = 0;
+        int i = 0;
+        while (i< numArr.length){
+            if(numArr[i] == num){
+                occ++;
+
+            }
+            i++;
+        }
+        return occ;
     }
 
 
